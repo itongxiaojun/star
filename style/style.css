@@ -11,7 +11,7 @@ body{ background:url(../images/background.jpg) repeat;}
     font-weight: normal;
     font-style: normal;
   }
-.polygon{ position: absolute; top: 0; right:0; z-index:1; width:467px;height: 967px; background: url(../images/rightBg.png) no-repeat;}
+/* .polygon{ position: absolute; top: 0; right:0; z-index:1; width:467px;height: 967px; background: url(../images/rightBg.png) no-repeat;} */
 .wrap{ margin:100px auto; width: 630px;}
 .logo{margin:150px auto 50px; width: 319px; height: 165px; background: url(../images/logo.png) no-repeat;}
 .title{ margin-top: -50px; font-size:80px; text-align: center; color: #3e464c;font-family: 'NeuesBauenDemo'; font-weight: 200;}
