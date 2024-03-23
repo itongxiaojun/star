@@ -1,0 +1,11 @@
+<div id='star-div' style='width: 100%;height: 100%;'></div>
+<script src='https://aladin.cds.unistra.fr/AladinLite/api/v3/latest/aladin.js' charset='utf-8'></script>
+<script type="text/javascript">
+    var a;
+    A.init.then(() => {
+        a = A.aladin('#star-div', {target: '03 47 29.0765529 +24 06 18.488347', survey: 'P/DSS2/color', zoom: 2, showReticle: true});
+        var cat = A.catalog({name: 'Star Foundation', sourceSize: 18});
+        a.addCatalog(cat);
+        cat.addSources([A.marker(56.87115, 24.10514, {popupTitle: 'Alcyone', popupDesc: '<em>Constellation:</em>Taurus<br/>Register: <a target="_blank" href="https://www.star.org">star.org</a><br/>More: <a target="_blank" href="https://en.wikipedia.org/wiki/Alcyone_(star)">wikipedia</a>'})]);
+    });
+  </script>
