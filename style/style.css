@@ -1,24 +1,72 @@
 /* CSS Document */
-*{margin:0;}
-body{ background:url(../images/background.jpg) repeat;}
-@font-face {
-    font-family: 'NeuesBauenDemo';
-    src: url('webfont.eot');
-    src: url('webfont.eot?#iefix') format('embedded-opentype'),
-     url('webfont.woff') format('woff'),
-     url('webfont.ttf') format('truetype'),
-     url('webfont.svg#NeuesBauenDemo') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-/* .polygon{ position: absolute; top: 0; right:0; z-index:1; width:467px;height: 967px; background: url(../images/rightBg.png) no-repeat;} */
-.wrap{ margin:100px auto; width: 630px;}
-.logo{margin:150px auto 50px; width: 319px; height: 165px; background: url(../images/logo.png) no-repeat;}
-.title{ margin-top: -50px; font-size:80px; text-align: center; color: #3e464c;font-family: 'NeuesBauenDemo'; font-weight: 200;}
-.slogan{ font-size: 32px; text-align: center; color: #3e464c;font-family: 'NeuesBauenDemo'; font-weight: 100;}
-a.linkBtn{display:block; margin: 50px auto;width: 240px; height: 60px; border-radius: 30px; line-height: 60px; text-align: center; color: #fff; text-decoration: none;background: linear-gradient(to right, #49007c, #c10085); font-size: 24px; font-family: 'NeuesBauenDemo';transition: box-shadow 0.5s;
-    -webkit-transition: box-shadow 0.5s;}
-a.linkBtn:hover{ background:#74007f;box-shadow:3px 3px 3px #d5d5d5;}
-@media screen and (max-width: 980px) {
-	.wrap{ margin:210px auto; width: 630px;}
-}
+*{ margin:0; padding:0;}
+body{ background: url(../images/topBG.jpg) no-repeat top center; font-family: "Work Sans","Helvetica Neue",Helvetica,"PingFang SC","Microsoft Yahei","WenQuanYi Micro Hei",Arial,Verdana,sans-serif;}
+.fl{ float:left;}
+.fr{ float:right;}
+.clearfix:before, .clearfix:after,.cols:before, .cols:after,.row:before, .row:after { content: ""; display: table; }.clearfix:after,.cols:after,.row:after { clear: both; }.clearfix,.cols,.row { zoom: 1; }
+ul li{ list-style: none;}
+a{text-decoration: none;}
+.wrap{ margin: 0 auto;width: 1200px; }
+.nav{ height:85px; line-height: 85px; background: url(../images/navBG.png) repeat-x;}
+.logo{ display: inline-block; float:left; margin-top: 15px; width:152px; height: 47px; background: url(../images/logo.png) no-repeat;}
+.nav ul{ float:right;}
+.nav li{ float:left; margin-left: 20px;}
+.nav li a{ color: #a5acbb;}
+.nav li a:hover{ color:#fff;}
+.nav li a.on{ color:white;}
+
+.bannerCon{ margin-top: 260px; color: #fff; text-align: center;}
+.bannerCon h3{ font-size: 45px; font-weight: normal;}
+.bannerCon h2{ font-size: 90px; line-height: 1.6em;}
+.bannerCon h4{ font-size:36px; font-weight: normal;}
+
+.top1{ width:100%; height:735px; padding-top: 165px; background:#fff url(../images/top1BG.jpg) no-repeat top center;}
+.top1 h2{ font-size: 36px;}
+.top1 h4{ font-size:16px;}
+.top1 .img{ float:right; margin-right: 110px; width: 420px;}
+.top1 .text{ float:left; width: 490px; font-size: 16px; line-height: 1.8em;}
+.top1 .text p{ margin-top: 40px; color: #052452; }
+
+.grayBlock,.whiteBlock,.blackBlock{ background: #f5f5f5;height:735px; padding-top: 165px;}
+.whiteBlock{ background: url(../images/whiteBg.jpg) no-repeat top center;}
+.blackBlock{ background: #333; height: 400px;}
+.grayBlock h2,.whiteBlock h2,.blackBlock h2{ font-size:36px; color: #111; font-weight: 200;}
+.grayBlock .titleLine,.whiteBlock .titleLine,.blackBlock .titleLine{ display:block;margin-top: 15px; width:68px; height:6px; overflow: hidden; font-size: 1; background: #111;}
+.blackBlock h2{ color:#fff;}
+.blackBlock .titleLine{ background:#fff;}
+
+.txCon{ margin-top: 150px; width:290px; float: left; margin-left: 40px; margin-right: 40px;}
+.txCon img{ display:block; margin-left:auto; margin-right: auto;}
+.txCon h2{ margin-top: 15px; margin-bottom: 15px; font-size:25px; font-weight: 100px; text-align: center; color：#111；}
+.txCon p{ font-size:18px; line-height: 1.6em; color:#666;}
+.arrow,.arrow1{ position: absolute; top: 200px; left: 350px; width: 42px; height: 29px; background: url(../images/tx_4.png) no-repeat;}
+.arrow1{left:710px;}
+
+.zhicheng{ margin-top: 85px; width:1170px; height: 420px; padding-top: 60px; background: url(../images/zhicheng.png) no-repeat;}
+.zhicheng .txt{ float:right; margin-right: 220px; width: 320px; color: #111;}
+.zhicheng .txt h4{ font-size: 20px; margin-top: 40px; font-weight: 100px;}
+.zhicheng .txt p{ font-size: 16px; line-height: 1.8em;}
+
+.cj{}
+.cj p{ font-size: 14px;}
+.cj .txCon{width:300px; }
+
+.jh{}
+.jh .txCon h2{ font-size: 36px; text-align: center;}
+.jh .txCon .jhLine{ height:4px; background: url(../images/jhLine.png) repeat-x; overflow: hidden; font-size: 1px;}
+.jh .txCon p{ margin-top: 20px; font-size:20px;}
+
+.td{}
+.td .txCon P{text-align: center;}
+
+.fh{}
+.fh .txCon h2{ font-size:20px;}
+.fh .txCon h2 a{ font-size:20px; text-decoration: none; color:#125F03 ;}
+.fh .txCon h2 a:hover{text-decoration: underline;}
+
+.blackBlock ul{ margin:100px auto; width: 400px;}
+.blackBlock li{ float:left; margin-left: 10px; margin-right: 10px;}
+.blackBlock li img{ width:70px; height: 70px;}
+.blackBlock p{display: block; clear: both;margin-top:110px; font-size: 14px; color: #a1a1a1; text-align: center;}
+
+/* for 980px or less */
